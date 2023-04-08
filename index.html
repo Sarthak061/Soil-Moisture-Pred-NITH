@@ -33,9 +33,9 @@ body {
 </head>
 <body>
     <div>
-    <h1>Enter a Day to predict</h1>
+    <h1>Enter a Date to predict</h1>
 
-    <p>put your day here</p>
+    <p>put your date here</p>
 
         <form class = "container">
         <input type="text" id="dateInput" name="predict" required='required'>
@@ -53,13 +53,13 @@ body {
             const sm1 = prediction1[day-1]
             const sm2 = prediction2[day-1]
             const avg = (sm1+sm2)/2;
-            document.getElementById("result").innerHTML = "Soil Moisture is at location 1 is :  " + sm1+ "  Soil Moisture At location 2 is: " +sm2 ;
-            document.getElementById("average").innerHTML = "Average Soil Moisture is :" + avg;}
+            document.getElementById("result").innerHTML = "Soil Moisture at Chandigarh University is :  " + sm1 ;
+            document.getElementById("average").innerHTML = "Average Soil Moisture for that week is :" + avg;}
           else{document.getElementById("result").innerHTML = " invalid input "}
       }
       
       </script>
-      <p font="Verdana">note : VALUES MAY VARY UP TO 5-10%</p>
+      <p font="Verdana">note : VALUES MAY VARY UP TO 1-5%</p>
     </div>
 </body>
 </html>
