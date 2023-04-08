@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    margin:0;
+    font-family: Verdana, sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 110%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #BEB04A;
+  }
+  div{
+    padding:20px;
+    margin-top:30px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="{{url_for('index')}}">soil moisture of march predictor</a></li>
+        <li><a href="{{url_for('index1')}}">Predict with Inputs of USER 1</a></li>
+        <li><a href="{{url_for('index2')}}">Predict with Inputs of USER 2</a></li>
+        <li><a class = "active">About me and project</a></li>
+    </ul>
+    <div>
+        <h1>About Myself</h1>
+        <p>Hi I'm Geetam Talluri pursuing Electrical Engineering from IIT Dharwad</p>
+        <p></p>
+        <p>you can contact me here</p>
+        <p>email:2100020050@iitdh.ac.in</p>
+        <p>mobile no : 9505538758 </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>soil moisture predictor</title>
+<style>
+body {
+    margin:0;
+    font-family: Verdana, sans-serif;
+    background-image: url('soil1.jpg');
+   background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+
+}
+  div{
+    padding:20px;
+    margin-top:30px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+    <div>
+    <h1>Enter a Day to predict</h1>
+
+    <p>put your day here</p>
+
+        <form class = "container">
+        <input type="text" id="dateInput" name="predict" required='required'>
+        <button type="button" onclick="calculatesm()">PREDICT</button>
+        </form>
+      <p id="result", font="Verdana"></p>
+      <p id="average", font="Verdana"></p>
+      <script>
+        function calculatesm() {
+          const dateInput = document.getElementById("dateInput").value;
+          const day = parseInt(dateInput);
+          const prediction1 = [297.601191,296.172320,295.952927,295.337938,293.513505,292.067523,291.184392,290.260795,    289.383970,    286.683321,    288.694885,    287.695914,    286.871042,    288.671661,    285.673224,   286.651325,    287.667072,    283.652174,    285.691374,    288.651608,    284.652174,    286.652174,    288.652174,    287.652174,    286.652174,    285.653167,    287.652174,    288.676313,    288.669064,   288.652174,   288.667072]
+          const prediction2 = [330.492846,330.237573,330.093338,329.457583,328.793763,328.453099,328.151098,327.628991, 327.044707,327.027733,326.763249,326.813478,326.841818,326.819327,326.705549,326.733865,326.652986,326.652174,326.655218,326.652174,326.655218,326.652174,326.654109,326.654109,326.652174,326.652174,326.655218,326.654109,326.652561,326.652174,326.733312]
+          if(day<=31){
+            const sm1 = prediction1[day-1]
+            const sm2 = prediction2[day-1]
+            const avg = (sm1+sm2)/2;
+            document.getElementById("result").innerHTML = "Soil Moisture is at location 1 is :  " + sm1+ "  Soil Moisture At location 2 is: " +sm2 ;
+            document.getElementById("average").innerHTML = "Average Soil Moisture is :" + avg;}
+          else{document.getElementById("result").innerHTML = " invalid input "}
+      }
+      
+      </script>
+      <p font="Verdana">note : VALUES MAY VARY UP TO 5-10%</p>
+    </div>
+</body>
+</html>
