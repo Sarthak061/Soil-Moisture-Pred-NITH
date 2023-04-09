@@ -4,8 +4,7 @@ A detailed Report can be found <a href = 'https://docs.google.com/document/d/1A7
 
 The replit Deployment can be accessed <a href = "https://soil-moisture-pred-nith-2.sarthaksharma27.repl.co/"> here </a>
 
-The live demo - <iframe width="1280" height="680" src="https://www.youtube.com/embed/dO_RXfn3ZRI" title="D3fML Live demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+The live demo is available <a href = "https://youtu.be/dO_RXfn3ZRI"> here </a>
 WE are team defiance and we created an hybrid machine learning model to predict the soil moisture levels of any particular location. Our primary approach for preprocessing data was to find out the parameters for SARIMAX model to get the seasonality in data. for the same - We melted the soil moisture levels while taking the pm3 variable and it's values. to improve the model's predictive performance we also calculated the first, second and third difference of the moisture levels and used them for a comparative study.
 
 we then decomposed the time series into 3 components and we applied the Loess decomposition using the STL class from the statsmodels package, specifically on a subset of the data spanning 8 months. The data was then checked for stationarity - if it's stationary or not. and the auto correlation and partial auto correlation values were plotted. 
