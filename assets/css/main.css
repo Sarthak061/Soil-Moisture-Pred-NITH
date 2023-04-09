@@ -1,0 +1,140 @@
+ #panel {
+     display: table;
+     margin: auto;
+ }
+ 
+ #main {
+     text-align: center;
+ }
+ 
+ #left,
+ #right {
+     display: table-cell;
+ }
+ 
+ #left {
+     text-align: center;
+ }
+ 
+ #right {
+     width: 35%;
+     padding-left: 30px;
+     align-content: center;
+ }
+
+ .btn {
+     display: inline-block;
+     font-weight: 400;
+     text-align: center;
+     white-space: nowrap;
+     vertical-align: middle;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     border: 1px solid lightgrey;
+     padding: 5px;
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 1;
+     border-radius: 5px;
+     transition: all .15s ease-in-out;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+     cursor: pointer;
+     margin: 6px;
+     background-color: white;
+ }
+ 
+ .btn:hover {
+     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+ }
+ 
+ .action_btn {
+     padding: 5px 20px;
+     display: block;
+     margin: 0 0 15px 0;
+     font-size: 16px;
+     width: 200px;
+ }
+ 
+ .highlight_btn {
+     border: 3px solid #f57921;
+ }
+ 
+ .dice {
+     width: 70px;
+     height: 70px;
+ }
+ 
+ .active {
+     background-color: #ACCEEC;
+ }
+ 
+ button:focus {
+     outline: 0;
+ }
+ 
+ button:disabled {
+     cursor: not-allowed;
+ }
+ 
+ #board {
+     display: inline-block;
+     border: 5px solid #FFCA08;
+     background-color: #398BD4;
+     padding: 15px;
+     margin: 10px auto 10px auto;
+     text-align: center;
+     border-radius: 8px;
+ }
+ 
+ #error {
+     color: #ffffff;
+     margin-bottom: 40px;
+ }
+ 
+ .msg {
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ #score-table {
+     width: 330px;
+     margin: 10px auto;
+     background-color: rgb(5, 5, 5);
+     border: 5px solid #FFCA08;
+ }
+ 
+ #score-table div {
+     display: table;
+     width: 100%;
+     border-collapse: collapse;
+ }
+ 
+ #score-table div span {
+     display: table-cell;
+     width: 50%;
+     border: 2px solid #FFCA08;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     padding: 3px;
+ }
+ 
+ #score-table .table-total {
+     background-color: rgb(3, 3, 3) !important;
+     font-weight: bold;
+ }
+ 
+ #score-table .table-title {
+     font-weight: bold;
+ }
+ 
+ .restart {
+     background-color: lightblue;
+ }
+ 
+ .restart img {
+     width: 15px;
+     height: 15px;
+ }
