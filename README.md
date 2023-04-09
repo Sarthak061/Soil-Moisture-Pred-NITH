@@ -1,11 +1,10 @@
 a machine-learning model that can predict soil moisture levels based on time series data.
 
 A detailed Report can be found <a href = 'https://docs.google.com/document/d/1A7p_0JeeiBUQQXa80Rd8c4A7a6hutTEJWeLkbi-Mq4o/edit?usp=sharing'> here </a>
+
 The replit Deployment can be accessed <a href = "https://soil-moisture-pred-nith-2.sarthaksharma27.repl.co/"> here </a>
-The live demo - 
-<iframe width="420" height="315" 
-src="https://youtu.be/dO_RXfn3ZRI"> 
-</iframe>
+
+The live demo - <iframe width="1280" height="680" src="https://www.youtube.com/embed/dO_RXfn3ZRI" title="D3fML Live demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 WE are team defiance and we created an hybrid machine learning model to predict the soil moisture levels of any particular location. Our primary approach for preprocessing data was to find out the parameters for SARIMAX model to get the seasonality in data. for the same - We melted the soil moisture levels while taking the pm3 variable and it's values. to improve the model's predictive performance we also calculated the first, second and third difference of the moisture levels and used them for a comparative study.
 
