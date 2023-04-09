@@ -6,7 +6,7 @@ WE are team defiance and we created an hybrid machine learning model to predict 
 
 we then decomposed the time series into 3 components and we applied the Loess decomposition using the STL class from the statsmodels package, specifically on a subset of the data spanning 8 months. The data was then checked for stationarity - if it's stationary or not. and the auto correlation and partial auto correlation values were plotted. 
 
-One the SARIMAX model was taken care of, to predict the values of soil moisture - we deployed an imputed RFR Pipeline. The model was then exported and sliced using pickle slicer into 4 smaller divisions- each of which had a different weight, and size.
+Once the SARIMAX model was taken care of to predict the values of soil moisture - we deployed an imputed RFR Pipeline. The model was then exported and sliced using pickle slicer into 4 smaller divisions- each of which had a different weight, and size.
 
 an even more accurate determination was made by using the ADFuller (ADF) test and the model was evaluated after fitting the values in it. The models were tested upon various values of P, Q, D, and M for getting the optimal values and accuracy.
 
